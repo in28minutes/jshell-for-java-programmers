@@ -22,36 +22,47 @@ System.out.print("\033[H\033[2J");
 - Open Command Prompt and type in jshell
 - Other option is to cd to the bin folder where JDK 9 is installed and type in jshell
 - /exit
-- Quick Tip - Nothing is saved by default!
-- Quick Tip - Verbose mode! jshell -v
 
 ### JShell Basics - Variables and Expressions
 - int i=10;
 - int i=10; int j=10; //multiple statements
 - System.out.println(i);
 - i = i + j
+
+```
+   1 : int x = 10;
+   2 : x
+   4 : x = x + 10;
+   5 : System.out.println(x);
+   6 : int i = 10;
+   7 :  int j = 20;
+   8 : i = i + 10;
+   9 :  j = j + 10;
+ ```
+### JShell Basics - A few tips
 - Tip : Semicolon is not mandatory unless you want to seperate statements on a single line.
 - Tip : Comments are supported //
+- Quick Tip - Nothing is saved by default!
+- Quick Tip - Verbose mode! 
+ - jshell -v
 
+### JShell Commands - list, drop and history
+ - numerical identifier
+ - /drop
+ - /history
 
 ### JShell Basics - Multiple Lines
 - i = 
     -   i + j
 - Multi line comments
 
-
-### JShell Tip : Implicit Variables
+### JShell Tip : Implicit Variables and Feedback options
 - When expression returns a value
 - 10 + 10
 - System.out.println($1)
-
-### JShell Tip : Feedback options
 - /set feedback verbose
 - silent | normal | concise
 
-### JShell Tip : Access modifiers are Ignored Outside a class
-- public, protected and private are ignored outside a class
-- final and static are also ignore
 
 ### JShell Basics - Methods
 
@@ -93,31 +104,27 @@ void printTwice(String str) {
 - course1.setName("Microservices with Spring Boot");
 - Cannot access private variables in a class - course1.name 
 
-### JShell Tip - Auto completion
+### JShell Basics - Auto completion
 - Class in a package
 - Class members
 - Parameters
 - Overloaded methods
 - Documentation of a Class
 
-### JShell Commands - Help
+
+### More JShell Tips : Exceptions, Commands and Access Modifiers
 - All commands start with / - slash or forward slash
 - /help, /?, / followed by tab
+- JShell Commands - var, methods and types
+- JShell Tip : Access modifiers are Ignored Outside a class
+- public, protected and private are ignored outside a class
+- final and static are also ignored
+- Exceptions
 
-### JShell Commands - list, drop and history
- - numerical identifier
- - /drop
- - /history
-
-### JShell Commands - var, methods and types
-
-### JShell Tip : Exceptions and Line Numbers
 
 ### Saving and Reloading JShell Sessions
 - /save file.jsh
 - /open file.jsh
-
-### JShell Tip - Open Existing Java File
 
 
 ### JShell - Setting Custom Start Options
@@ -141,25 +148,23 @@ System.out.print("\033[H\033[2J");
 ```
 /set start -retain DEFAULT PRINTING
 ```
-### JShell Tip - More Save and List Options - history, all and start
 
 ### JShell - Playing around with an External Library
 - /env -class-path commons-lang3-3.6.jar
 - StringUtils.trim("1234 ");
 
-### JShell Tip - Shortcuts to commands and options
-- /l
-- /h
-- /l -a
-
-### JShell Tip - Navigation
-- Ctrl + a
-- Ctrl + e
-- Ctrl + k
-
-### Jshell Tip - Search Snippets
-- Ctrl + r
-- Ctrl + s
+### More JShell Tips 
+ - Shortcuts to commands and options
+   - /l
+   - /h
+   - /l -a
+ - Navigation
+   - Ctrl + a
+   - Ctrl + e
+   - Ctrl + k
+ - Search Snippets
+   - Ctrl + r
+   - Ctrl + s
 
 ### Thank You
 
