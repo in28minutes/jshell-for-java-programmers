@@ -87,6 +87,7 @@ void printTwice(String str) {
 ### JShell Basics - Class
 - Basic Class
 - Editing a class using external editor
+- /edit
 - /edit Course
 - Course course1 = new Course()
 - course1.setName("Microservices with Spring Boot");
@@ -143,6 +144,8 @@ System.out.print("\033[H\033[2J");
 ### JShell Tip - More Save and List Options - history, all and start
 
 ### JShell - Playing around with an External Library
+- /env -class-path commons-lang3-3.6.jar
+- StringUtils.trim("1234 ");
 
 ### JShell Tip - Shortcuts to commands and options
 - /l
