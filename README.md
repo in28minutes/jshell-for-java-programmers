@@ -112,14 +112,10 @@ void printTwice(String str) {
 - Documentation of a Class
 
 
-### More JShell Tips : Exceptions, Commands and Access Modifiers
+### More JShell Tips : Exceptions, Commands and Help
 - All commands start with / - slash or forward slash
    - /help, /?, / followed by tab
 - JShell Commands - var, methods and types
-- Modifiers 
-   - Access modifiers are Ignored Outside a class
-       - public, protected and private are ignored outside a class
-   - final and static are also ignored
 - Exceptions
 
 
@@ -145,13 +141,10 @@ System.out.print("\033[H\033[2J");
 /list -all
 /history
 ```
-- JShell Tip - For the Lazy Guys
-```
-/set start -retain DEFAULT PRINTING
-```
 
 ### JShell - Playing around with an External Library
 - /env -class-path commons-lang3-3.6.jar
+- import org.apache.commons.lang3.*
 - StringUtils.trim("1234 ");
 
 ### More JShell Tips 
@@ -166,6 +159,10 @@ System.out.print("\033[H\033[2J");
  - Search Snippets
    - Ctrl + r
    - Ctrl + s
+- For the Lazy Guys
+```
+/set start -retain DEFAULT PRINTING
+```
 
 ### Thank You
 
