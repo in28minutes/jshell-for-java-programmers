@@ -114,11 +114,12 @@ void printTwice(String str) {
 
 ### More JShell Tips : Exceptions, Commands and Access Modifiers
 - All commands start with / - slash or forward slash
-- /help, /?, / followed by tab
+   - /help, /?, / followed by tab
 - JShell Commands - var, methods and types
-- JShell Tip : Access modifiers are Ignored Outside a class
-- public, protected and private are ignored outside a class
-- final and static are also ignored
+- Modifiers 
+   - Access modifiers are Ignored Outside a class
+       - public, protected and private are ignored outside a class
+   - final and static are also ignored
 - Exceptions
 
 
